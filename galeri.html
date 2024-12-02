@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Pernikahan</title>
+    <style>
+        /* Gaya umum untuk halaman */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('c.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        /* Gaya untuk judul */
+        h1 {
+            font-size: 32px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Gaya untuk galeri gambar */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .gallery img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        /* Efek hover pada gambar */
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Gaya untuk tombol kembali */
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff7f7f;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4f4f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Galeri Pernikahan</h1>
+    <div class="gallery">
+        <img src="1.jpg" alt="Foto 1" width="300">
+        <img src="2.jpg" alt="Foto 2" width="300">
+        <img src="3.jpg" alt="Foto 3" width="300">
+        <img src="4.jpg" alt="Foto 4" width="300">
+        <img src="5.jpg" alt="Foto 5" width="300">
+    </div>
+    <button onclick="location.href='undangan.html'">Kembali</button>
+</body>
+</html>
